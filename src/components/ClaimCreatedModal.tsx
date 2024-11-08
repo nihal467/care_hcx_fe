@@ -1,14 +1,17 @@
-import * as Notification from "@/Utils/Notifications";
-
-import CareIcon from "@/CAREUI/icons/CareIcon";
-import DialogModal from "@/components/Common/Dialog";
-import { FileUpload } from "@/components/Files/FileUpload";
-import { HCXClaimModel } from "../types";
-import { Submit } from "@/components/Common/components/ButtonV2";
-import request from "@/Utils/request/request";
-import routes from "../api";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+
+import CareIcon from "@/CAREUI/icons/CareIcon";
+
+import { Submit } from "@/components/Common/ButtonV2";
+import DialogModal from "@/components/Common/Dialog";
+import { FileUpload } from "@/components/Files/FileUpload";
+
+import * as Notification from "@/Utils/Notifications";
+import request from "@/Utils/request/request";
+
+import routes from "../api";
+import { HCXClaimModel } from "../types";
 
 interface Props {
   claim: HCXClaimModel;

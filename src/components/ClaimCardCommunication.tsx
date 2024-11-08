@@ -1,19 +1,22 @@
-import * as Notification from "@/Utils/Notifications";
-
-import { HCXClaimModel, HCXCommunicationModel } from "../types";
-
-import ButtonV2 from "@/components/Common/components/ButtonV2";
-import CareIcon from "@/CAREUI/icons/CareIcon";
-import { FileUploadModel } from "@/components/Patient/models";
-import TextAreaFormField from "@/components/Form/FormFields/TextAreaFormField";
-import { classNames } from "@/Utils/utils";
-import coreRoutes from "@/Redux/api";
-import request from "@/Utils/request/request";
-import routes from "../api";
-import useFileUpload from "@/Utils/useFileUpload";
-import useQuery from "@/Utils/request/useQuery";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+
+import CareIcon from "@/CAREUI/icons/CareIcon";
+
+import ButtonV2 from "@/components/Common/ButtonV2";
+import TextAreaFormField from "@/components/Form/FormFields/TextAreaFormField";
+import { FileUploadModel } from "@/components/Patient/models";
+
+import useFileUpload from "@/hooks/useFileUpload";
+
+import * as Notification from "@/Utils/Notifications";
+import coreRoutes from "@/Utils/request/api";
+import request from "@/Utils/request/request";
+import useQuery from "@/Utils/request/useQuery";
+import { classNames } from "@/Utils/utils";
+
+import routes from "../api";
+import { HCXClaimModel, HCXCommunicationModel } from "../types";
 
 interface IProps {
   claim: HCXClaimModel;

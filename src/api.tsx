@@ -1,8 +1,8 @@
-import { HCXClaimModel, HCXCommunicationModel } from "./types";
+import { Type } from "@/Utils/request/api";
+import { PaginatedResponse } from "@/Utils/request/types";
 
 import { PMJAYPackageItem } from "./components/PMJAYProcedurePackageAutocomplete";
-import { PaginatedResponse } from "@/Utils/request/types";
-import { Type } from "@/Redux/api";
+import { HCXClaimModel, HCXCommunicationModel } from "./types";
 
 // TODO: care_hcx_fe - add hcx api routes
 const routes = {

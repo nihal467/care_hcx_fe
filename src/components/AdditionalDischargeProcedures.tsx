@@ -1,14 +1,16 @@
-import * as Notification from "@/Utils/Notifications";
-
-import { AdditionalDischargeProceduresComponentType } from "@/pluginTypes";
-import ClaimCard from "./ClaimCard";
-import CreateClaimCard from "./CreateClaimCard";
-import { HCXClaimModel } from "../types";
-import routes from "../api";
-import { useMessageListener } from "@/common/hooks/useMessageListener";
-import useQuery from "@/Utils/request/useQuery";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+
+import { useMessageListener } from "@/hooks/useMessageListener";
+
+import * as Notification from "@/Utils/Notifications";
+import useQuery from "@/Utils/request/useQuery";
+import { AdditionalDischargeProceduresComponentType } from "@/pluginTypes";
+
+import routes from "../api";
+import { HCXClaimModel } from "../types";
+import ClaimCard from "./ClaimCard";
+import CreateClaimCard from "./CreateClaimCard";
 
 const AdditionalDischargeProcedures: AdditionalDischargeProceduresComponentType =
   ({ consultation }) => {

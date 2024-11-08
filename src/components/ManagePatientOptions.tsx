@@ -1,10 +1,12 @@
 import { triggerGoal } from "@core/Integrations/Plausible";
-import useAuthUser from "@core/common/hooks/useAuthUser";
+import { Link } from "raviger";
+import { useTranslation } from "react-i18next";
+
+import CareIcon from "@/CAREUI/icons/CareIcon";
+
+import useAuthUser from "@/hooks/useAuthUser";
 
 import { ManagePatientOptionsComponentType } from "@/pluginTypes";
-import { Link } from "raviger";
-import CareIcon from "@/CAREUI/icons/CareIcon";
-import { useTranslation } from "react-i18next";
 
 const ManagePatientOptions: ManagePatientOptionsComponentType = ({
   patient,
